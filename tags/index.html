@@ -134,7 +134,7 @@
     <div class="window-header">
         <span class="window-title">
             
-                Tags (0 posts)
+                Tags (2 posts)
             
         </span>
         <div class="window-controls">
@@ -154,23 +154,136 @@
         
         
         
+        <div class="view-options" style="margin-bottom: 12px; padding: 4px; background: var(--button-face); border: 1px outset var(--button-face);">
+            <span style="font-size: 10px; margin-right: 8px;">📋 View:</span>
+            <button class="btn" onclick="toggleView('list')" id="listBtn" style="font-size: 9px; margin-right: 2px;">List</button>
+            <button class="btn" onclick="toggleView('grid')" id="gridBtn" style="font-size: 9px; margin-right: 2px;">Grid</button>
+            <button class="btn" onclick="toggleView('archive')" id="archiveBtn" style="font-size: 9px;">Archive</button>
+        </div>
+        
         
         
         <div id="listView" class="posts-view">
             
-            <div style="text-align: center; padding: 20px; color: var(--text-secondary);">
-                📭 No posts found in this section.
-            </div>
+            <ul class="post-list">
+                
+                <li class="post-list-item">
+                    
+                    
+                    <div class="post-list-title">
+                        <a href="https://dacuteangle.github.io/tags/pandas/">Pandas</a>
+                    </div>
+                    
+                    <div class="post-list-meta">
+                        <span class="post-meta-item">📅 Jul 24, 2025</span>
+                        
+                        
+                        
+                        
+                        
+                        <span class="post-meta-item">📖 0 min read</span>
+                        <span class="post-meta-item">📊 0 words</span>
+                    </div>
+                    
+                    
+                    
+                    
+                    
+                    <div style="clear: both;"></div>
+                </li>
+                
+                <li class="post-list-item">
+                    
+                    
+                    <div class="post-list-title">
+                        <a href="https://dacuteangle.github.io/tags/feature-engineering/">Feature Engineering</a>
+                    </div>
+                    
+                    <div class="post-list-meta">
+                        <span class="post-meta-item">📅 Jul 24, 2025</span>
+                        
+                        
+                        
+                        
+                        
+                        <span class="post-meta-item">📖 0 min read</span>
+                        <span class="post-meta-item">📊 0 words</span>
+                    </div>
+                    
+                    
+                    
+                    
+                    
+                    <div style="clear: both;"></div>
+                </li>
+                
+            </ul>
             
         </div>
         
         
         <div id="gridView" class="posts-view" style="display: none;">
             
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 8px;">
+                
+                <div class="post-card" style="background: var(--bg-window); border: 1px outset var(--border-dark); padding: 8px;">
+                    
+                    
+                    <div class="card-title" style="font-weight: bold; margin-bottom: 4px; font-size: 11px;">
+                        <a href="https://dacuteangle.github.io/tags/pandas/" style="text-decoration: none; color: var(--text-primary);">Pandas</a>
+                    </div>
+                    
+                    <div class="card-meta" style="font-size: 9px; color: var(--text-secondary); margin-bottom: 4px;">
+                        Jul 24, 2025 • 0 min read
+                    </div>
+                    
+                    
+                </div>
+                
+                <div class="post-card" style="background: var(--bg-window); border: 1px outset var(--border-dark); padding: 8px;">
+                    
+                    
+                    <div class="card-title" style="font-weight: bold; margin-bottom: 4px; font-size: 11px;">
+                        <a href="https://dacuteangle.github.io/tags/feature-engineering/" style="text-decoration: none; color: var(--text-primary);">Feature Engineering</a>
+                    </div>
+                    
+                    <div class="card-meta" style="font-size: 9px; color: var(--text-secondary); margin-bottom: 4px;">
+                        Jul 24, 2025 • 0 min read
+                    </div>
+                    
+                    
+                </div>
+                
+            </div>
+            
         </div>
         
         
         <div id="archiveView" class="posts-view" style="display: none;">
+            
+            
+            <div class="archive-year">2025</div>
+            
+            <div class="archive-month">
+                <strong>July</strong> (2 posts)
+                <ul style="margin: 4px 0 8px 12px; font-size: 10px;">
+                    
+                    <li style="margin: 1px 0;">
+                        <span style="color: var(--text-secondary);">24</span> - 
+                        <a href="https://dacuteangle.github.io/tags/pandas/">Pandas</a>
+                        
+                    </li>
+                    
+                    <li style="margin: 1px 0;">
+                        <span style="color: var(--text-secondary);">24</span> - 
+                        <a href="https://dacuteangle.github.io/tags/feature-engineering/">Feature Engineering</a>
+                        
+                    </li>
+                    
+                </ul>
+            </div>
+            
+            
             
         </div>
     </div>
@@ -250,6 +363,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     <div><a href="https://dacuteangle.github.io/">🏠 Home</a></div>
                     
                     
+                    <div><a href="/posts/">📝 All Posts</a></div>
+                    
                     <div><a href="/categories/">📂 Categories</a></div>
                     <div><a href="/tags/">🏷️ Tags</a></div>
                     
@@ -277,10 +392,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 <div>
                     <div style="font-weight: bold; margin-bottom: 4px;">📊 Statistics</div>
-                    <div>Posts: 0</div>
-                    <div>Categories: 0</div>
-                    <div>Tags: 0</div>
-                    <div>Last Update: Jul 14, 2025</div>
+                    <div>Posts: 2</div>
+                    <div>Categories: 1</div>
+                    <div>Tags: 2</div>
+                    <div>Last Update: Jul 24, 2025</div>
                 </div>
             </div>
             
@@ -293,7 +408,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <span class="blink">⭐</span>
                 </div>
                 <div style="font-size: 8px; color: var(--text-secondary);">
-                    Best viewed in Mozilla Firefox
+                    Best viewed in Safari
                     • Screen resolution: 1024x768 or higher
                 </div>
                 <div style="font-size: 8px; margin-top: 4px;">
@@ -320,8 +435,8 @@ document.addEventListener('DOMContentLoaded', function() {
     
     <div class="status-bar">
         <div class="status-left">
-            <span class="status-item">Tue 15 Jul 2025</span>
-            <span class="status-item">09:46</span>
+            <span class="status-item">Thu 24 Jul 2025</span>
+            <span class="status-item">23:48</span>
         </div>
         <div class="status-right">
             <span class="status-item">AcuteAngle</span>

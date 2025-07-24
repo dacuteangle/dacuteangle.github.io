@@ -1,33 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Welcome to Retro Web Central! on AcuteAngle</title>
-    <link>https://dacuteangle.github.io/</link>
-    <description>Recent content in Welcome to Retro Web Central! on AcuteAngle</description>
+    <title>Feature Engineering on AcuteAngle</title>
+    <link>https://dacuteangle.github.io/tags/feature-engineering/</link>
+    <description>Recent content in Feature Engineering on AcuteAngle</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 24 Jul 2025 23:11:55 +0800</lastBuildDate>
-    <atom:link href="https://dacuteangle.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://dacuteangle.github.io/tags/feature-engineering/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>pandas.get_dummies</title>
       <link>https://dacuteangle.github.io/posts/get_dummies/</link>
       <pubDate>Thu, 24 Jul 2025 23:11:55 +0800</pubDate>
       <guid>https://dacuteangle.github.io/posts/get_dummies/</guid>
       <description>&lt;p&gt;&amp;ldquo;Dummy Variables&amp;rdquo;，虚拟变量，是指将分类变量（Categorical Variables）转换为数值形式的一种方法，以便机器学习模型能够处理它们。&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://pandas.pydata.org/docs/reference/api/pandas.get_dummies.html#pandas.get_dummies&#34;&gt;pandas文档&lt;/a&gt;&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;pandas.get_dummies(data, prefix=None, prefix_sep=&amp;#39;_&amp;#39;, dummy_na=False, columns=None, sparse=False, drop_first=False, dtype=None) -&amp;gt; pd.DataFrame&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;该函数将data中的unique值（也就是categorical variables）重新编码转换成dummy variables，因此：&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;data中的unique值会变成column name（需要注意NaN值默认ignore）&lt;/li&gt;&#xA;&lt;li&gt;index不变&lt;/li&gt;&#xA;&lt;li&gt;每行有一个column是True，其他均为False&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;其中：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;data: array-like对象（list,tuple,Series,Index,np.ndarray等可被pandas,numpy识别为数组的序列型对象）或DataFrame&lt;/li&gt;&#xA;&lt;li&gt;prefix, prefix_sep: 重新命名组成column name时可加前缀&lt;/li&gt;&#xA;&lt;li&gt;dummy_na: bool型变量&lt;em&gt;默认False&lt;/em&gt;，data中的NaN是否要单独列为一列，如果否则直接ignore NaN值&lt;/li&gt;&#xA;&lt;li&gt;columns: list-like对象，当input data是DataFrame时指定需处理的列，默认None=全部&lt;/li&gt;&#xA;&lt;li&gt;sparse: 输出的DataFrame是否要用SparseArray，默认否=用NumPy array&lt;/li&gt;&#xA;&lt;li&gt;drop_first: 是否把编码得到的dummy的第一列drop掉（因为每行只有一个True剩下都是False，其实可以去掉一列，没有损失信息）&lt;/li&gt;&#xA;&lt;li&gt;dtype: 默认bool，指定输出的DataFrame的dtype&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Test</title>
-      <link>https://dacuteangle.github.io/posts/test/</link>
-      <pubDate>Mon, 14 Jul 2025 20:11:55 +0800</pubDate>
-      <guid>https://dacuteangle.github.io/posts/test/</guid>
-      <description>&lt;p&gt;safjskfasf&lt;/p&gt;&#xA;&lt;p&gt;112&lt;/p&gt;&#xA;&lt;p&gt;中文滴答&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>About Retro Web Central</title>
-      <link>https://dacuteangle.github.io/about/</link>
-      <pubDate>Wed, 01 Dec 1999 10:00:00 +0000</pubDate>
-      <guid>https://dacuteangle.github.io/about/</guid>
-      <description>&lt;h1 id=&#34;about-retro-web-central-&#34;&gt;About Retro Web Central 🌐&lt;/h1&gt;&#xA;&lt;h2 id=&#34;welcome-to-the-coolest-corner-of-cyberspace&#34;&gt;Welcome to the Coolest Corner of Cyberspace!&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Greetings, fellow netizen!&lt;/strong&gt; You&amp;rsquo;ve discovered the ultimate destination for everything that makes the World Wide Web totally awesome. Retro Web Central has been your trusted guide to the digital frontier since 1999!&lt;/p&gt;&#xA;&lt;h2 id=&#34;our-mission-&#34;&gt;Our Mission 🎯&lt;/h2&gt;&#xA;&lt;p&gt;We&amp;rsquo;re dedicated to bringing you:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;🔥 &lt;strong&gt;The hottest web design trends&lt;/strong&gt; from around the globe&lt;/li&gt;&#xA;&lt;li&gt;💻 &lt;strong&gt;Cutting-edge technology reviews&lt;/strong&gt; and tutorials&lt;/li&gt;&#xA;&lt;li&gt;🎨 &lt;strong&gt;Graphic resources&lt;/strong&gt; to make your site shine&lt;/li&gt;&#xA;&lt;li&gt;🚀 &lt;strong&gt;Y2K preparedness&lt;/strong&gt; information and updates&lt;/li&gt;&#xA;&lt;li&gt;🎮 &lt;strong&gt;Gaming news&lt;/strong&gt; and reviews&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;meet-the-team-&#34;&gt;Meet the Team 👥&lt;/h2&gt;&#xA;&lt;h3 id=&#34;webmaster3000---site-administrator&#34;&gt;WebMaster3000 - Site Administrator&lt;/h3&gt;&#xA;&lt;p&gt;&lt;em&gt;&amp;ldquo;Making the web a more colorful place, one animated GIF at a time!&amp;rdquo;&lt;/em&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

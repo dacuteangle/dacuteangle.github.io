@@ -2,19 +2,36 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://dacuteangle.github.io/</loc>
-    <lastmod>2025-07-14T20:11:55+08:00</lastmod>
-  </url><url>
-    <loc>https://dacuteangle.github.io/post/</loc>
-    <lastmod>2025-07-14T20:11:55+08:00</lastmod>
-  </url><url>
-    <loc>https://dacuteangle.github.io/post/test/</loc>
-    <lastmod>2025-07-14T20:11:55+08:00</lastmod>
-  </url><url>
     <loc>https://dacuteangle.github.io/categories/</loc>
+    <lastmod>2025-07-24T23:11:55+08:00</lastmod>
   </url><url>
-    <loc>https://dacuteangle.github.io/series/</loc>
+    <loc>https://dacuteangle.github.io/tags/feature-engineering/</loc>
+    <lastmod>2025-07-24T23:11:55+08:00</lastmod>
+  </url><url>
+    <loc>https://dacuteangle.github.io/tags/pandas/</loc>
+    <lastmod>2025-07-24T23:11:55+08:00</lastmod>
+  </url><url>
+    <loc>https://dacuteangle.github.io/posts/get_dummies/</loc>
+    <lastmod>2025-07-24T23:11:55+08:00</lastmod>
+  </url><url>
+    <loc>https://dacuteangle.github.io/posts/</loc>
+    <lastmod>2025-07-24T23:11:55+08:00</lastmod>
   </url><url>
     <loc>https://dacuteangle.github.io/tags/</loc>
+    <lastmod>2025-07-24T23:11:55+08:00</lastmod>
+  </url><url>
+    <loc>https://dacuteangle.github.io/categories/tech/</loc>
+    <lastmod>2025-07-24T23:11:55+08:00</lastmod>
+  </url><url>
+    <loc>https://dacuteangle.github.io/posts/test/</loc>
+    <lastmod>2025-07-14T20:11:55+08:00</lastmod>
+  </url><url>
+    <loc>https://dacuteangle.github.io/</loc>
+    <lastmod>1999-12-31T23:59:59+00:00</lastmod>
+  </url><url>
+    <loc>https://dacuteangle.github.io/about/</loc>
+    <lastmod>1999-12-01T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dacuteangle.github.io/series/</loc>
   </url>
 </urlset>

@@ -3,28 +3,27 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Categories | AcuteAngle</title>
+    <title>pandas.get_dummies | AcuteAngle</title>
     
     
     
-    <meta name="description" content="A nostalgic journey through the early web">
+    <meta name="description" content="用法，参数，常见处理">
     
     
     
-    <meta property="og:title" content="Categories | AcuteAngle">
-    <meta property="og:description" content="A nostalgic journey through the early web">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://dacuteangle.github.io/categories/">
+    <meta property="og:title" content="pandas.get_dummies | AcuteAngle">
+    <meta property="og:description" content="用法，参数，常见处理">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://dacuteangle.github.io/posts/get_dummies/">
     
     
     
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Categories | AcuteAngle">
-    <meta name="twitter:description" content="A nostalgic journey through the early web">
+    <meta name="twitter:title" content="pandas.get_dummies | AcuteAngle">
+    <meta name="twitter:description" content="用法，参数，常见处理">
     
     
     
-    <link rel="alternate" type="application/rss&#43;xml" href="https://dacuteangle.github.io/categories/index.xml" title="AcuteAngle">
     
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     
@@ -49,7 +48,7 @@
         </div>
         <div class="address-bar">
             
-            https://dacuteangle.github.io/categories/
+            https://dacuteangle.github.io/posts/get_dummies/
             
         </div>
     </div>
@@ -130,13 +129,9 @@
         
         <main class="main-content">
             
-<div class="window">
+<article class="window">
     <div class="window-header">
-        <span class="window-title">
-            
-                Categories (1 post)
-            
-        </span>
+        <span class="window-title">pandas.get_dummies</span>
         <div class="window-controls">
             <span class="window-button">_</span>
             <span class="window-button">□</span>
@@ -144,143 +139,153 @@
         </div>
     </div>
     <div class="window-content">
+        <header class="content-header">
+            <h1 class="post-title">pandas.get_dummies</h1>
+            
+            
+            <div class="post-meta">
+                <span class="post-meta-item">
+                    📅 Published: Thursday, July 24, 2025
+                </span>
+                
+                <span class="post-meta-item">
+                    📖 1 min read
+                </span>
+                <span class="post-meta-item">
+                    📊 41 words
+                </span>
+                
+                
+                
+                
+                <span class="post-meta-item">
+                    📂 Categories: 
+                    
+                        
+                        <a href="/categories/tech">tech</a>
+                    
+                </span>
+                
+                
+                
+                <span class="post-meta-item">
+                    🏷️ Tags: 
+                    
+                        
+                        <a href="/tags/feature-engineering">feature engineering</a>
+                    
+                        , 
+                        <a href="/tags/pandas">pandas</a>
+                    
+                </span>
+                
+                
+                
+            </div>
+            
+            
+            
+            <div class="post-description" style="font-style: italic; margin: 8px 0; padding: 4px 8px; background: var(--bg-secondary); border: 1px inset var(--border-dark);">
+                用法，参数，常见处理
+            </div>
+            
+            
+            
+        </header>
         
         
         
-        
-        
-        
-        
-        
-        
-        
-        <div class="view-options" style="margin-bottom: 12px; padding: 4px; background: var(--button-face); border: 1px outset var(--button-face);">
-            <span style="font-size: 10px; margin-right: 8px;">📋 View:</span>
-            <button class="btn" onclick="toggleView('list')" id="listBtn" style="font-size: 9px; margin-right: 2px;">List</button>
-            <button class="btn" onclick="toggleView('grid')" id="gridBtn" style="font-size: 9px; margin-right: 2px;">Grid</button>
-            <button class="btn" onclick="toggleView('archive')" id="archiveBtn" style="font-size: 9px;">Archive</button>
+        <div class="toc" style="background: var(--bg-secondary); border: 1px inset var(--border-dark); padding: 8px; margin: 12px 0;">
+            <div style="font-weight: bold; margin-bottom: 6px; border-bottom: 1px solid var(--border-dark); padding-bottom: 2px;">
+                📋 Table of Contents
+            </div>
+            <nav id="TableOfContents"></nav>
         </div>
         
         
         
-        <div id="listView" class="posts-view">
-            
-            <ul class="post-list">
-                
-                <li class="post-list-item">
-                    
-                    
-                    <div class="post-list-title">
-                        <a href="https://dacuteangle.github.io/categories/tech/">Tech</a>
-                    </div>
-                    
-                    <div class="post-list-meta">
-                        <span class="post-meta-item">📅 Jul 24, 2025</span>
-                        
-                        
-                        
-                        
-                        
-                        <span class="post-meta-item">📖 0 min read</span>
-                        <span class="post-meta-item">📊 0 words</span>
-                    </div>
-                    
-                    
-                    
-                    
-                    
-                    <div style="clear: both;"></div>
-                </li>
-                
-            </ul>
-            
+        <div class="content">
+            <p>&ldquo;Dummy Variables&rdquo;，虚拟变量，是指将分类变量（Categorical Variables）转换为数值形式的一种方法，以便机器学习模型能够处理它们。</p>
+<p><a href="https://pandas.pydata.org/docs/reference/api/pandas.get_dummies.html#pandas.get_dummies">pandas文档</a></p>
+<pre tabindex="0"><code>pandas.get_dummies(data, prefix=None, prefix_sep=&#39;_&#39;, dummy_na=False, columns=None, sparse=False, drop_first=False, dtype=None) -&gt; pd.DataFrame
+</code></pre><p>该函数将data中的unique值（也就是categorical variables）重新编码转换成dummy variables，因此：</p>
+<ol>
+<li>data中的unique值会变成column name（需要注意NaN值默认ignore）</li>
+<li>index不变</li>
+<li>每行有一个column是True，其他均为False</li>
+</ol>
+<p>其中：</p>
+<ul>
+<li>data: array-like对象（list,tuple,Series,Index,np.ndarray等可被pandas,numpy识别为数组的序列型对象）或DataFrame</li>
+<li>prefix, prefix_sep: 重新命名组成column name时可加前缀</li>
+<li>dummy_na: bool型变量<em>默认False</em>，data中的NaN是否要单独列为一列，如果否则直接ignore NaN值</li>
+<li>columns: list-like对象，当input data是DataFrame时指定需处理的列，默认None=全部</li>
+<li>sparse: 输出的DataFrame是否要用SparseArray，默认否=用NumPy array</li>
+<li>drop_first: 是否把编码得到的dummy的第一列drop掉（因为每行只有一个True剩下都是False，其实可以去掉一列，没有损失信息）</li>
+<li>dtype: 默认bool，指定输出的DataFrame的dtype</li>
+</ul>
+
         </div>
         
         
-        <div id="gridView" class="posts-view" style="display: none;">
+        <footer class="post-footer" style="margin-top: 20px; padding-top: 12px; border-top: 1px solid var(--border-dark);">
             
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 8px;">
-                
-                <div class="post-card" style="background: var(--bg-window); border: 1px outset var(--border-dark); padding: 8px;">
-                    
-                    
-                    <div class="card-title" style="font-weight: bold; margin-bottom: 4px; font-size: 11px;">
-                        <a href="https://dacuteangle.github.io/categories/tech/" style="text-decoration: none; color: var(--text-primary);">Tech</a>
-                    </div>
-                    
-                    <div class="card-meta" style="font-size: 9px; color: var(--text-secondary); margin-bottom: 4px;">
-                        Jul 24, 2025 • 0 min read
-                    </div>
-                    
-                    
+            
+            
+            <div class="sharing" style="margin-bottom: 12px;">
+                <div style="font-weight: bold; margin-bottom: 6px;">📤 Share this post:</div>
+                <div style="display: flex; gap: 4px; flex-wrap: wrap;">
+                    <a href="https://twitter.com/intent/tweet?text=pandas.get_dummies&url=https%3a%2f%2fdacuteangle.github.io%2fposts%2fget_dummies%2f" 
+                       target="_blank" class="btn" style="font-size: 10px;">Twitter</a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fdacuteangle.github.io%2fposts%2fget_dummies%2f" 
+                       target="_blank" class="btn" style="font-size: 10px;">Facebook</a>
+                    <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3a%2f%2fdacuteangle.github.io%2fposts%2fget_dummies%2f" 
+                       target="_blank" class="btn" style="font-size: 10px;">LinkedIn</a>
+                    <a href="mailto:?subject=pandas.get_dummies&body=https%3a%2f%2fdacuteangle.github.io%2fposts%2fget_dummies%2f" 
+                       class="btn" style="font-size: 10px;">Email</a>
                 </div>
-                
             </div>
             
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        </footer>
+    </div>
+</article>
+
+
+<nav class="post-nav" style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 8px 0;">
+    
+    <div class="window">
+        <div class="window-header">
+            <span class="window-title">← Previous Post</span>
+            <div class="window-controls">
+                <span class="window-button">_</span>
+                <span class="window-button">□</span>
+                <span class="window-button">×</span>
+            </div>
         </div>
-        
-        
-        <div id="archiveView" class="posts-view" style="display: none;">
-            
-            
-            <div class="archive-year">2025</div>
-            
-            <div class="archive-month">
-                <strong>July</strong> (1 post)
-                <ul style="margin: 4px 0 8px 12px; font-size: 10px;">
-                    
-                    <li style="margin: 1px 0;">
-                        <span style="color: var(--text-secondary);">24</span> - 
-                        <a href="https://dacuteangle.github.io/categories/tech/">Tech</a>
-                        
-                    </li>
-                    
-                </ul>
-            </div>
-            
-            
-            
+        <div class="window-content">
+            <a href="https://dacuteangle.github.io/posts/test/" style="text-decoration: none; color: inherit;">
+                <div style="font-weight: bold; font-size: 10px; margin-bottom: 2px;">Test</div>
+                <div style="font-size: 9px; color: var(--text-secondary);">Jul 14, 2025</div>
+            </a>
         </div>
     </div>
-</div>
-
-
-
-
-
-
-
-
-
-<script>
-function toggleView(viewType) {
-    
-    document.getElementById('listView').style.display = 'none';
-    document.getElementById('gridView').style.display = 'none';
-    document.getElementById('archiveView').style.display = 'none';
     
     
-    document.querySelectorAll('.view-options .btn').forEach(btn => {
-        btn.style.background = 'var(--button-face)';
-        btn.style.border = '1px outset var(--button-face)';
-    });
     
-    
-    document.getElementById(viewType + 'View').style.display = 'block';
-    document.getElementById(viewType + 'Btn').style.background = 'var(--highlight)';
-    document.getElementById(viewType + 'Btn').style.color = 'white';
-    document.getElementById(viewType + 'Btn').style.border = '1px inset var(--button-face)';
-    
-    
-    localStorage.setItem('preferredView', viewType);
-}
+</nav>
 
 
-document.addEventListener('DOMContentLoaded', function() {
-    const preferredView = localStorage.getItem('preferredView') || 'list';
-    toggleView(preferredView);
-});
-</script>
+
 
         </main>
         
@@ -395,6 +400,8 @@ document.addEventListener('DOMContentLoaded', function() {
         </div>
         <div class="status-right">
             <span class="status-item">AcuteAngle</span>
+            
+            <span class="status-item">41 words</span>
             
         </div>
     </div>
