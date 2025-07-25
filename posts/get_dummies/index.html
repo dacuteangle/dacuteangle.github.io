@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>pandas.get_dummies | AcuteAngle</title>
+    <title>pandas.get_dummies | DAcuteAngle</title>
     
     
     
@@ -11,7 +11,7 @@
     
     
     
-    <meta property="og:title" content="pandas.get_dummies | AcuteAngle">
+    <meta property="og:title" content="pandas.get_dummies | DAcuteAngle">
     <meta property="og:description" content="用法，参数，常见处理">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://dacuteangle.github.io/posts/get_dummies/">
@@ -19,7 +19,7 @@
     
     
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="pandas.get_dummies | AcuteAngle">
+    <meta name="twitter:title" content="pandas.get_dummies | DAcuteAngle">
     <meta name="twitter:description" content="用法，参数，常见处理">
     
     
@@ -74,12 +74,6 @@
                 </a>
             </li>
             
-            <li class="nav-item">
-                <a href="https://dacuteangle.github.io/about/" class="nav-link">
-                    About
-                </a>
-            </li>
-            
 
             
             
@@ -112,7 +106,7 @@
         <header class="site-header">
             <div class="window">
                 <div class="window-header">
-                    <span class="window-title">AcuteAngle</span>
+                    <span class="window-title">DAcuteAngle</span>
                     <div class="window-controls">
                         <span class="window-button">_</span>
                         <span class="window-button">□</span>
@@ -120,7 +114,7 @@
                     </div>
                 </div>
                 <div class="window-content">
-                    <a href="https://dacuteangle.github.io/" class="site-title">AcuteAngle</a>
+                    <a href="https://dacuteangle.github.io/" class="site-title">DAcuteAngle</a>
                     
                 </div>
             </div>
@@ -195,13 +189,6 @@
         
         
         
-        <div class="toc" style="background: var(--bg-secondary); border: 1px inset var(--border-dark); padding: 8px; margin: 12px 0;">
-            <div style="font-weight: bold; margin-bottom: 6px; border-bottom: 1px solid var(--border-dark); padding-bottom: 2px;">
-                📋 Table of Contents
-            </div>
-            <nav id="TableOfContents"></nav>
-        </div>
-        
         
         
         <div class="content">
@@ -218,7 +205,7 @@
 <ul>
 <li>data: array-like对象（list,tuple,Series,Index,np.ndarray等可被pandas,numpy识别为数组的序列型对象）或DataFrame</li>
 <li>prefix, prefix_sep: 重新命名组成column name时可加前缀</li>
-<li>dummy_na: bool型变量<em>默认False</em>，data中的NaN是否要单独列为一列，如果否则直接ignore NaN值</li>
+<li>dummy_na: bool型变量<strong>默认False</strong>，data中的NaN是否要单独列为一列，如果否则直接ignore NaN值</li>
 <li>columns: list-like对象，当input data是DataFrame时指定需处理的列，默认None=全部</li>
 <li>sparse: 输出的DataFrame是否要用SparseArray，默认否=用NumPy array</li>
 <li>drop_first: 是否把编码得到的dummy的第一列drop掉（因为每行只有一个True剩下都是False，其实可以去掉一列，没有损失信息）</li>
@@ -231,20 +218,6 @@
         <footer class="post-footer" style="margin-top: 20px; padding-top: 12px; border-top: 1px solid var(--border-dark);">
             
             
-            
-            <div class="sharing" style="margin-bottom: 12px;">
-                <div style="font-weight: bold; margin-bottom: 6px;">📤 Share this post:</div>
-                <div style="display: flex; gap: 4px; flex-wrap: wrap;">
-                    <a href="https://twitter.com/intent/tweet?text=pandas.get_dummies&url=https%3a%2f%2fdacuteangle.github.io%2fposts%2fget_dummies%2f" 
-                       target="_blank" class="btn" style="font-size: 10px;">Twitter</a>
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fdacuteangle.github.io%2fposts%2fget_dummies%2f" 
-                       target="_blank" class="btn" style="font-size: 10px;">Facebook</a>
-                    <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3a%2f%2fdacuteangle.github.io%2fposts%2fget_dummies%2f" 
-                       target="_blank" class="btn" style="font-size: 10px;">LinkedIn</a>
-                    <a href="mailto:?subject=pandas.get_dummies&body=https%3a%2f%2fdacuteangle.github.io%2fposts%2fget_dummies%2f" 
-                       class="btn" style="font-size: 10px;">Email</a>
-                </div>
-            </div>
             
             
             
@@ -263,22 +236,7 @@
 
 <nav class="post-nav" style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 8px 0;">
     
-    <div class="window">
-        <div class="window-header">
-            <span class="window-title">← Previous Post</span>
-            <div class="window-controls">
-                <span class="window-button">_</span>
-                <span class="window-button">□</span>
-                <span class="window-button">×</span>
-            </div>
-        </div>
-        <div class="window-content">
-            <a href="https://dacuteangle.github.io/posts/test/" style="text-decoration: none; color: inherit;">
-                <div style="font-weight: bold; font-size: 10px; margin-bottom: 2px;">Test</div>
-                <div style="font-size: 9px; color: var(--text-secondary);">Jul 14, 2025</div>
-            </a>
-        </div>
-    </div>
+    <div></div>
     
     
     
@@ -309,9 +267,7 @@
                 
                 <div>
                     <div style="font-weight: bold; margin-bottom: 4px;">📋 Site Info</div>
-                    <div>© 2025 AcuteAngle</div>
-                    
-                    <div>Created by Your Name</div>
+                    <div>© 2025 DAcuteAngle</div>
                     
                     <div>Powered by <a href="https://gohugo.io" target="_blank">Hugo</a></div>
                     <div>Theme: <a href="https://github.com/vibecodemama/vintage-web-hugo-theme" target="_blank">Vintage Web</a></div>
@@ -352,7 +308,7 @@
                 
                 <div>
                     <div style="font-weight: bold; margin-bottom: 4px;">📊 Statistics</div>
-                    <div>Posts: 2</div>
+                    <div>Posts: 1</div>
                     <div>Categories: 1</div>
                     <div>Tags: 2</div>
                     <div>Last Update: Jul 24, 2025</div>
@@ -368,7 +324,7 @@
                     <span class="blink">⭐</span>
                 </div>
                 <div style="font-size: 8px; color: var(--text-secondary);">
-                    Best viewed in Safari
+                    Best viewed in Chrome
                     • Screen resolution: 1024x768 or higher
                 </div>
                 <div style="font-size: 8px; margin-top: 4px;">
@@ -395,11 +351,11 @@
     
     <div class="status-bar">
         <div class="status-left">
-            <span class="status-item">Thu 24 Jul 2025</span>
-            <span class="status-item">23:48</span>
+            <span class="status-item">Fri 25 Jul 2025</span>
+            <span class="status-item">14:32</span>
         </div>
         <div class="status-right">
-            <span class="status-item">AcuteAngle</span>
+            <span class="status-item">DAcuteAngle</span>
             
             <span class="status-item">41 words</span>
             
