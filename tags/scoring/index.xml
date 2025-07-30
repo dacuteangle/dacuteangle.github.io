@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tech on DAcuteAngle</title>
-    <link>https://dacuteangle.github.io/categories/tech/</link>
-    <description>Recent content in Tech on DAcuteAngle</description>
+    <title>Scoring on DAcuteAngle</title>
+    <link>https://dacuteangle.github.io/tags/scoring/</link>
+    <description>Recent content in Scoring on DAcuteAngle</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Tue, 29 Jul 2025 14:50:37 +0800</lastBuildDate>
-    <atom:link href="https://dacuteangle.github.io/categories/tech/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://dacuteangle.github.io/tags/scoring/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>模型评价指标(Scoring)</title>
       <link>https://dacuteangle.github.io/posts/scoring/</link>
       <pubDate>Tue, 29 Jul 2025 14:50:37 +0800</pubDate>
       <guid>https://dacuteangle.github.io/posts/scoring/</guid>
       <description>&lt;h2 id=&#34;1-分类&#34;&gt;1. 分类&lt;/h2&gt;&#xA;&lt;h3 id=&#34;1-accuracy准确率&#34;&gt;1. Accuracy(准确率)&lt;/h3&gt;&#xA;&lt;p&gt;所有样本结果中的预测准确程度&#xA;&lt;/p&gt;&#xA;$$&#xA;Accuracy = \frac{预测正确的样本}{总样本} = \frac{TP+TN}{TP+FP+TN+FN} &#xA;\\&#xA;(其中T/F = True/False = 真/假, P/N = Positive/Negative = 正例/负例)&#xA;$$&lt;p&gt;缺点：受样本不均衡影响很大，因为平等对待所有样本，少数类的错误会被多数类的正确掩盖，所以这个指标也许不能真正反映模型的分类能力。&lt;/p&gt;&#xA;&lt;h3 id=&#34;2-precision精确率查准率&#34;&gt;2. Precision(精确率/查准率)&lt;/h3&gt;&#xA;&lt;p&gt;正样本结果中的预测准确程度（查到的尽量都对）&#xA;&lt;/p&gt;&#xA;$$&#xA;Precision = \frac{TP}{TP+FP}&#xA;$$&lt;h3 id=&#34;3-recall召回率查全率&#34;&gt;3. Recall(召回率/查全率)&lt;/h3&gt;&#xA;&lt;p&gt;实际为正的样本中被预测为正样本的概率（对的尽量都查到）&#xA;&lt;/p&gt;&#xA;$$&#xA;Recall = \frac{TP}{TP+FN}&#xA;$$&lt;p&gt;Recall也就是True Positive Rate(TPR)，也称灵敏度，类似还有TNR，FPR，FNR。&#xA;另外，有$TNR+FPR=1, TPR+FNR=1$&lt;/p&gt;&#xA;&lt;h3 id=&#34;4-f1-score&#34;&gt;4. f1-score&lt;/h3&gt;&#xA;&lt;p&gt;由于Precision和Recall难两全，可作P-R图，如果模型A的P-R曲线完全被模型B的包住，说明B性能更优。&#xA;另一种思路是计算P和R的加权调和平均F-Measure（F-Score）&#xA;&lt;/p&gt;&#xA;$$&#xA;\frac{1}{F 1}=\frac{1}{2} \cdot\left(\frac{1}{P}+\frac{1}{R}\right) \\&#xA;F1=\frac{2 \times P \times R}{P+R} = \frac{2 \times TP}{样例总数+TP-TN}&#xA;$$&lt;h3 id=&#34;5-roc曲线和auc&#34;&gt;5. ROC曲线和AUC&lt;/h3&gt;&#xA;&lt;p&gt;ROC（Receiver Operating Characteristic）曲线&#xA;AUC(Area Under Curve)，指ROC曲线和坐标轴围成的面积&lt;/p&gt;&#xA;&lt;p&gt;FPR-TPR曲线，TPR（纵轴）越高越好，FPR（横轴）越低越好，因此曲线越陡越好。AUC越大越好。&#xA;优点：不受测试样本正负分布影响。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>pandas.get_dummies</title>
-      <link>https://dacuteangle.github.io/posts/get_dummies/</link>
-      <pubDate>Thu, 24 Jul 2025 23:11:55 +0800</pubDate>
-      <guid>https://dacuteangle.github.io/posts/get_dummies/</guid>
-      <description>&lt;p&gt;&amp;ldquo;Dummy Variables&amp;rdquo;，虚拟变量，是指将分类变量（Categorical Variables）转换为数值形式的一种方法，以便机器学习模型能够处理它们。&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://pandas.pydata.org/docs/reference/api/pandas.get_dummies.html#pandas.get_dummies&#34;&gt;pandas文档&lt;/a&gt;&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;pandas.get_dummies(data, prefix=None, prefix_sep=&amp;#39;_&amp;#39;, dummy_na=False, columns=None, sparse=False, drop_first=False, dtype=None) -&amp;gt; pd.DataFrame&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;该函数将data中的unique值（也就是categorical variables）重新编码转换成dummy variables，因此：&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;data中的unique值会变成column name（需要注意NaN值默认ignore）&lt;/li&gt;&#xA;&lt;li&gt;index不变&lt;/li&gt;&#xA;&lt;li&gt;每行有一个column是True，其他均为False&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;其中：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;data: array-like对象（list,tuple,Series,Index,np.ndarray等可被pandas,numpy识别为数组的序列型对象）或DataFrame&lt;/li&gt;&#xA;&lt;li&gt;prefix, prefix_sep: 重新命名组成column name时可加前缀&lt;/li&gt;&#xA;&lt;li&gt;dummy_na: bool型变量&lt;strong&gt;默认False&lt;/strong&gt;，data中的NaN是否要单独列为一列，如果否则直接ignore NaN值&lt;/li&gt;&#xA;&lt;li&gt;columns: list-like对象，当input data是DataFrame时指定需处理的列，默认None=全部&lt;/li&gt;&#xA;&lt;li&gt;sparse: 输出的DataFrame是否要用SparseArray，默认否=用NumPy array&lt;/li&gt;&#xA;&lt;li&gt;drop_first: 是否把编码得到的dummy的第一列drop掉（因为每行只有一个True剩下都是False，其实可以去掉一列，没有损失信息）&lt;/li&gt;&#xA;&lt;li&gt;dtype: 默认bool，指定输出的DataFrame的dtype&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>

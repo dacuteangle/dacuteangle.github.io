@@ -3,28 +3,27 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Feature Engineering | DAcuteAngle</title>
+    <title>模型评价指标(Scoring) | DAcuteAngle</title>
     
     
     
-    <meta name="description" content="greetings from 2007">
+    <meta name="description" content="分类模型（Accuracy, recall, precision, f1, roc-auc）">
     
     
     
-    <meta property="og:title" content="Feature Engineering | DAcuteAngle">
-    <meta property="og:description" content="greetings from 2007">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://dacuteangle.github.io/tags/feature-engineering/">
+    <meta property="og:title" content="模型评价指标(Scoring) | DAcuteAngle">
+    <meta property="og:description" content="分类模型（Accuracy, recall, precision, f1, roc-auc）">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://dacuteangle.github.io/posts/scoring/">
     
     
     
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Feature Engineering | DAcuteAngle">
-    <meta name="twitter:description" content="greetings from 2007">
+    <meta name="twitter:title" content="模型评价指标(Scoring) | DAcuteAngle">
+    <meta name="twitter:description" content="分类模型（Accuracy, recall, precision, f1, roc-auc）">
     
     
     
-    <link rel="alternate" type="application/rss&#43;xml" href="https://dacuteangle.github.io/tags/feature-engineering/index.xml" title="DAcuteAngle">
     
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     
@@ -49,7 +48,7 @@
         </div>
         <div class="address-bar">
             
-            https://dacuteangle.github.io/tags/feature-engineering/
+            https://dacuteangle.github.io/posts/scoring/
             
         </div>
     </div>
@@ -124,9 +123,9 @@
         
         <main class="main-content">
             
-<div class="window">
+<article class="window">
     <div class="window-header">
-        <span class="window-title">🏷️ Tag: Feature Engineering</span>
+        <span class="window-title">模型评价指标(Scoring)</span>
         <div class="window-controls">
             <span class="window-button">_</span>
             <span class="window-button">□</span>
@@ -134,105 +133,183 @@
         </div>
     </div>
     <div class="window-content">
-        <div class="tag-info" style="background: var(--bg-secondary); border: 1px inset var(--border-dark); padding: 8px; margin-bottom: 12px;">
-            <div style="font-weight: bold; margin-bottom: 4px;">
-                🏷️ Tag: Feature Engineering
+        <header class="content-header">
+            <h1 class="post-title">模型评价指标(Scoring)</h1>
+            
+            
+            <div class="post-meta">
+                <span class="post-meta-item">
+                    📅 Published: Tuesday, July 29, 2025
+                </span>
+                
+                <span class="post-meta-item">
+                    📖 1 min read
+                </span>
+                <span class="post-meta-item">
+                    📊 83 words
+                </span>
+                
+                
+                
+                
+                <span class="post-meta-item">
+                    📂 Categories: 
+                    
+                        
+                        <a href="/categories/tech">tech</a>
+                    
+                </span>
+                
+                
+                
+                <span class="post-meta-item">
+                    🏷️ Tags: 
+                    
+                        
+                        <a href="/tags/scoring">scoring</a>
+                    
+                        , 
+                        <a href="/tags/machine-learning">machine learning</a>
+                    
+                </span>
+                
+                
+                
             </div>
-            <div style="font-size: 10px;">
-                1 post tagged with "feature engineering"
+            
+            
+            
+            <div class="post-description" style="font-style: italic; margin: 8px 0; padding: 4px 8px; background: var(--bg-secondary); border: 1px inset var(--border-dark);">
+                分类模型（Accuracy, recall, precision, f1, roc-auc）
             </div>
             
+            
+            
+        </header>
+        
+        
+        
+        <div class="toc" style="background: var(--bg-secondary); border: 1px inset var(--border-dark); padding: 8px; margin: 12px 0;">
+            <div style="font-weight: bold; margin-bottom: 6px; border-bottom: 1px solid var(--border-dark); padding-bottom: 2px;">
+                📋 Table of Contents
+            </div>
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-分类">1. 分类</a>
+      <ul>
+        <li><a href="#1-accuracy准确率">1. Accuracy(准确率)</a></li>
+        <li><a href="#2-precision精确率查准率">2. Precision(精确率/查准率)</a></li>
+        <li><a href="#3-recall召回率查全率">3. Recall(召回率/查全率)</a></li>
+        <li><a href="#4-f1-score">4. f1-score</a></li>
+        <li><a href="#5-roc曲线和auc">5. ROC曲线和AUC</a>
+          <ul>
+            <li><a href="#51-roc曲线如何绘制">5.1 ROC曲线如何绘制</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
         </div>
         
         
         
-        <ul class="post-list">
-            
-            <li class="post-list-item">
-                
-                
-                <div class="post-list-title">
-                    <a href="https://dacuteangle.github.io/posts/get_dummies/">pandas.get_dummies</a>
-                </div>
-                
-                <div class="post-list-meta">
-                    <span class="post-meta-item">📅 Jul 24, 2025</span>
-                    
-                    
-                    <span class="post-meta-item">
-                        📂 <a href="/categories/tech">tech</a>
-                    </span>
-                    
-                    <span class="post-meta-item">📖 1 min read</span>
-                </div>
-                
-                
-                <div class="post-list-summary"><p>&ldquo;Dummy Variables&rdquo;，虚拟变量，是指将分类变量（Categorical Variables）转换为数值形式的一种方法，以便机器学习模型能够处理它们。</p>
-<p><a href="https://pandas.pydata.org/docs/reference/api/pandas.get_dummies.html#pandas.get_dummies">pandas文档</a></p>
-<pre tabindex="0"><code>pandas.get_dummies(data, prefix=None, prefix_sep=&#39;_&#39;, dummy_na=False, columns=None, …</code></pre></div>
-                
-                
-                
-                <div class="post-tags" style="margin-top: 4px;">
-                    
-                    <a href="/tags/feature-engineering" 
-                       style="display: inline-block; background: var(--button-face); border: 1px outset var(--button-face); padding: 1px 3px; margin: 1px; font-size: 8px; text-decoration: none; color: var(--text-primary); background: var(--highlight); color: white;">
-                       🏷️ feature engineering
-                    </a>
-                    
-                    <a href="/tags/pandas" 
-                       style="display: inline-block; background: var(--button-face); border: 1px outset var(--button-face); padding: 1px 3px; margin: 1px; font-size: 8px; text-decoration: none; color: var(--text-primary); ">
-                       🏷️ pandas
-                    </a>
-                    
-                </div>
-                
-                
-                <div style="clear: both;"></div>
-            </li>
-            
-        </ul>
+        <div class="content">
+            <h2 id="1-分类">1. 分类</h2>
+<h3 id="1-accuracy准确率">1. Accuracy(准确率)</h3>
+<p>所有样本结果中的预测准确程度
+</p>
+$$
+Accuracy = \frac{预测正确的样本}{总样本} = \frac{TP+TN}{TP+FP+TN+FN} 
+\\
+(其中T/F = True/False = 真/假, P/N = Positive/Negative = 正例/负例)
+$$<p>缺点：受样本不均衡影响很大，因为平等对待所有样本，少数类的错误会被多数类的正确掩盖，所以这个指标也许不能真正反映模型的分类能力。</p>
+<h3 id="2-precision精确率查准率">2. Precision(精确率/查准率)</h3>
+<p>正样本结果中的预测准确程度（查到的尽量都对）
+</p>
+$$
+Precision = \frac{TP}{TP+FP}
+$$<h3 id="3-recall召回率查全率">3. Recall(召回率/查全率)</h3>
+<p>实际为正的样本中被预测为正样本的概率（对的尽量都查到）
+</p>
+$$
+Recall = \frac{TP}{TP+FN}
+$$<p>Recall也就是True Positive Rate(TPR)，也称灵敏度，类似还有TNR，FPR，FNR。
+另外，有$TNR+FPR=1, TPR+FNR=1$</p>
+<h3 id="4-f1-score">4. f1-score</h3>
+<p>由于Precision和Recall难两全，可作P-R图，如果模型A的P-R曲线完全被模型B的包住，说明B性能更优。
+另一种思路是计算P和R的加权调和平均F-Measure（F-Score）
+</p>
+$$
+\frac{1}{F 1}=\frac{1}{2} \cdot\left(\frac{1}{P}+\frac{1}{R}\right) \\
+F1=\frac{2 \times P \times R}{P+R} = \frac{2 \times TP}{样例总数+TP-TN}
+$$<h3 id="5-roc曲线和auc">5. ROC曲线和AUC</h3>
+<p>ROC（Receiver Operating Characteristic）曲线
+AUC(Area Under Curve)，指ROC曲线和坐标轴围成的面积</p>
+<p>FPR-TPR曲线，TPR（纵轴）越高越好，FPR（横轴）越低越好，因此曲线越陡越好。AUC越大越好。
+优点：不受测试样本正负分布影响。</p>
+<h4 id="51-roc曲线如何绘制">5.1 ROC曲线如何绘制</h4>
+<p>（模型output：对每个样本输出一个预测为正类的概率）</p>
+<ol>
+<li>设置分类阈值threshold（判断样本为正类的概率临界值）</li>
+<li>遍历所有可能的阈值（从高到低，如1.0→0.0），每个阈值下：
+<ol>
+<li>将概率≥阈值的样本预测为正类，其余为负类。</li>
+<li>根据真实标签计算TP、FP、TN、FN，进而得到TPR和FPR。</li>
+</ol>
+</li>
+<li>以FPR为横轴，TPR为纵轴，将每个阈值对应的（FPR, TPR）点连接成曲线。</li>
+</ol>
+<p>由于阈值越高被判定为正类的标准越严苛。最高时，所有样本均预测为负，分子TP=FP=0，因此TPR=FPR=0。最低时，所有样本均预测为正，分母中FN=TN=0，因此TPR=FPR=1。
+绘制过程中随着阈值降低，正类增加，负例减少，因此TP,FP增大或持平而TN,FN减少或持平，因此TPR和FPR增大或持平，ROC点往右上（或右／或上）移动，或不动；但绝不会往左下(或左／或下)移动。</p>
+<p>AUC=0.5 ROC对角线：FPR=TPR，模型将正类判为正类的概率（TPR）等于将负类误判为正类的概率（FPR），等同于随机猜测。</p>
+
+        </div>
         
+        
+        <footer class="post-footer" style="margin-top: 20px; padding-top: 12px; border-top: 1px solid var(--border-dark);">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        </footer>
     </div>
-</div>
+</article>
 
 
-
-<div class="window">
-    <div class="window-header">
-        <span class="window-title">🏷️ Related Tags</span>
-        <div class="window-controls">
-            <span class="window-button">_</span>
-            <span class="window-button">□</span>
-            <span class="window-button">×</span>
+<nav class="post-nav" style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 8px 0;">
+    
+    <div class="window">
+        <div class="window-header">
+            <span class="window-title">← Previous Post</span>
+            <div class="window-controls">
+                <span class="window-button">_</span>
+                <span class="window-button">□</span>
+                <span class="window-button">×</span>
+            </div>
+        </div>
+        <div class="window-content">
+            <a href="https://dacuteangle.github.io/posts/get_dummies/" style="text-decoration: none; color: inherit;">
+                <div style="font-weight: bold; font-size: 10px; margin-bottom: 2px;">pandas.get_dummies</div>
+                <div style="font-size: 9px; color: var(--text-secondary);">Jul 24, 2025</div>
+            </a>
         </div>
     </div>
-    <div class="window-content">
-        <div class="tag-cloud">
-            
-            
-            
-            
-            <a href="/tags/machine-learning">
-                🏷️ Machine Learning (1)
-            </a>
-            
-            
-            
-            <a href="/tags/pandas">
-                🏷️ Pandas (1)
-            </a>
-            
-            
-            
-            <a href="/tags/scoring">
-                🏷️ Scoring (1)
-            </a>
-            
-            
-        </div>
-    </div>
-</div>
+    
+    
+    
+</nav>
+
+
 
 
         </main>
@@ -345,6 +422,8 @@
         </div>
         <div class="status-right">
             <span class="status-item">DAcuteAngle</span>
+            
+            <span class="status-item">83 words</span>
             
         </div>
     </div>
