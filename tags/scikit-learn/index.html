@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Feature Engineering | DAcuteAngle</title>
+    <title>Scikit-Learn | DAcuteAngle</title>
     
     
     
@@ -27,20 +27,20 @@
     
     
     
-    <meta property="og:title" content="Feature Engineering | DAcuteAngle">
+    <meta property="og:title" content="Scikit-Learn | DAcuteAngle">
     <meta property="og:description" content="greetings from 2007">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://dacuteangle.github.io/tags/feature-engineering/">
+    <meta property="og:url" content="https://dacuteangle.github.io/tags/scikit-learn/">
     
     
     
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Feature Engineering | DAcuteAngle">
+    <meta name="twitter:title" content="Scikit-Learn | DAcuteAngle">
     <meta name="twitter:description" content="greetings from 2007">
     
     
     
-    <link rel="alternate" type="application/rss&#43;xml" href="https://dacuteangle.github.io/tags/feature-engineering/index.xml" title="DAcuteAngle">
+    <link rel="alternate" type="application/rss&#43;xml" href="https://dacuteangle.github.io/tags/scikit-learn/index.xml" title="DAcuteAngle">
     
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     
@@ -65,7 +65,7 @@
         </div>
         <div class="address-bar">
             
-            https://dacuteangle.github.io/tags/feature-engineering/
+            https://dacuteangle.github.io/tags/scikit-learn/
             
         </div>
     </div>
@@ -142,7 +142,7 @@
             
 <div class="window">
     <div class="window-header">
-        <span class="window-title">🏷️ Tag: Feature Engineering</span>
+        <span class="window-title">🏷️ Tag: Scikit-Learn</span>
         <div class="window-controls">
             <span class="window-button">_</span>
             <span class="window-button">□</span>
@@ -152,10 +152,10 @@
     <div class="window-content">
         <div class="tag-info" style="background: var(--bg-secondary); border: 1px inset var(--border-dark); padding: 8px; margin-bottom: 12px;">
             <div style="font-weight: bold; margin-bottom: 4px;">
-                🏷️ Tag: Feature Engineering
+                🏷️ Tag: Scikit-Learn
             </div>
             <div style="font-size: 10px;">
-                1 post tagged with "feature engineering"
+                1 post tagged with "scikit-learn"
             </div>
             
         </div>
@@ -168,11 +168,11 @@
                 
                 
                 <div class="post-list-title">
-                    <a href="https://dacuteangle.github.io/posts/get_dummies/">pandas.get_dummies</a>
+                    <a href="https://dacuteangle.github.io/posts/scoring/">分类模型评价指标(Scoring)</a>
                 </div>
                 
                 <div class="post-list-meta">
-                    <span class="post-meta-item">📅 Jul 24, 2025</span>
+                    <span class="post-meta-item">📅 Jul 29, 2025</span>
                     
                     
                     <span class="post-meta-item">
@@ -183,22 +183,33 @@
                 </div>
                 
                 
-                <div class="post-list-summary"><p>&ldquo;Dummy Variables&rdquo;，虚拟变量，是指将分类变量（Categorical Variables）转换为数值形式的一种方法，以便机器学习模型能够处理它们。</p>
-<p><a href="https://pandas.pydata.org/docs/reference/api/pandas.get_dummies.html#pandas.get_dummies">pandas文档</a></p>
-<pre tabindex="0"><code>pandas.get_dummies(data, prefix=None, prefix_sep=&#39;_&#39;, dummy_na=False, columns=None, …</code></pre></div>
+                <div class="post-list-summary"><h2 id="1-metrics">1. metrics</h2>
+<h3 id="1-accuracy准确率">1. Accuracy(准确率)</h3>
+<p>所有样本结果中的预测准确程度
+</p>
+$$
+Accuracy = \frac{预测正确的样本}{总样本} = \frac{TP+TN}{TP+FP+TN+FN} 
+\\
+(其中T/F = True/False = 真/假, P/N = Positive/Negative = 正例/负例)
+$$<p>缺点：受样本不均衡影响很大，因为平等对待所有样本，少数类 …</p></div>
                 
                 
                 
                 <div class="post-tags" style="margin-top: 4px;">
                     
-                    <a href="/tags/feature-engineering" 
-                       style="display: inline-block; background: var(--button-face); border: 1px outset var(--button-face); padding: 1px 3px; margin: 1px; font-size: 8px; text-decoration: none; color: var(--text-primary); background: var(--highlight); color: white;">
-                       🏷️ feature engineering
+                    <a href="/tags/scoring" 
+                       style="display: inline-block; background: var(--button-face); border: 1px outset var(--button-face); padding: 1px 3px; margin: 1px; font-size: 8px; text-decoration: none; color: var(--text-primary); ">
+                       🏷️ scoring
                     </a>
                     
-                    <a href="/tags/pandas" 
+                    <a href="/tags/machine-learning" 
                        style="display: inline-block; background: var(--button-face); border: 1px outset var(--button-face); padding: 1px 3px; margin: 1px; font-size: 8px; text-decoration: none; color: var(--text-primary); ">
-                       🏷️ pandas
+                       🏷️ machine learning
+                    </a>
+                    
+                    <a href="/tags/scikit-learn" 
+                       style="display: inline-block; background: var(--button-face); border: 1px outset var(--button-face); padding: 1px 3px; margin: 1px; font-size: 8px; text-decoration: none; color: var(--text-primary); background: var(--highlight); color: white;">
+                       🏷️ scikit-learn
                     </a>
                     
                 </div>
@@ -227,6 +238,10 @@
         <div class="tag-cloud">
             
             
+            <a href="/tags/feature-engineering">
+                🏷️ Feature Engineering (1)
+            </a>
+            
             
             
             <a href="/tags/machine-learning">
@@ -240,10 +255,6 @@
             </a>
             
             
-            
-            <a href="/tags/scikit-learn">
-                🏷️ Scikit-Learn (1)
-            </a>
             
             
             

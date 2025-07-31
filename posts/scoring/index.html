@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>模型评价指标(Scoring) | DAcuteAngle</title>
+    <title>分类模型评价指标(Scoring) | DAcuteAngle</title>
     
     
     
@@ -23,20 +23,20 @@
 
     
     
-    <meta name="description" content="分类模型（Accuracy, recall, precision, f1, roc-auc）">
+    <meta name="description" content="分类模型评价指标（Accuracy, recall, precision, f1, roc-auc）以及scikit-learn中如何计算">
     
     
     
-    <meta property="og:title" content="模型评价指标(Scoring) | DAcuteAngle">
-    <meta property="og:description" content="分类模型（Accuracy, recall, precision, f1, roc-auc）">
+    <meta property="og:title" content="分类模型评价指标(Scoring) | DAcuteAngle">
+    <meta property="og:description" content="分类模型评价指标（Accuracy, recall, precision, f1, roc-auc）以及scikit-learn中如何计算">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="http://localhost:1313/posts/scoring/">
+    <meta property="og:url" content="https://dacuteangle.github.io/posts/scoring/">
     
     
     
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="模型评价指标(Scoring) | DAcuteAngle">
-    <meta name="twitter:description" content="分类模型（Accuracy, recall, precision, f1, roc-auc）">
+    <meta name="twitter:title" content="分类模型评价指标(Scoring) | DAcuteAngle">
+    <meta name="twitter:description" content="分类模型评价指标（Accuracy, recall, precision, f1, roc-auc）以及scikit-learn中如何计算">
     
     
     
@@ -45,7 +45,7 @@
     
     
     
-    <link rel="stylesheet" href="http://localhost:1313/css/main.min.27c3b14d1eeabb5dab3e62357189e57a1b8c8f03a501cd421bf951e33fc323bd.css">
+    <link rel="stylesheet" href="https://dacuteangle.github.io/css/main.min.27c3b14d1eeabb5dab3e62357189e57a1b8c8f03a501cd421bf951e33fc323bd.css">
     
     
     
@@ -64,7 +64,7 @@
         </div>
         <div class="address-bar">
             
-            http://localhost:1313/posts/scoring/
+            https://dacuteangle.github.io/posts/scoring/
             
         </div>
     </div>
@@ -79,13 +79,13 @@
         
             
             <li class="nav-item">
-                <a href="http://localhost:1313/" class="nav-link">
+                <a href="https://dacuteangle.github.io/" class="nav-link">
                     Home
                 </a>
             </li>
             
             <li class="nav-item">
-                <a href="http://localhost:1313/posts/" class="nav-link">
+                <a href="https://dacuteangle.github.io/posts/" class="nav-link">
                     Posts
                 </a>
             </li>
@@ -95,14 +95,14 @@
             
             
             <li class="nav-item">
-                <a href="http://localhost:1313/categories/" class="nav-link">📂 Categories</a>
+                <a href="https://dacuteangle.github.io/categories/" class="nav-link">📂 Categories</a>
             </li>
             
 
             
             
             <li class="nav-item">
-                <a href="http://localhost:1313/tags/" class="nav-link">🏷️ Tags</a>
+                <a href="https://dacuteangle.github.io/tags/" class="nav-link">🏷️ Tags</a>
             </li>
             
 
@@ -111,7 +111,7 @@
         
         
         <li class="nav-item">
-            <a href="http://localhost:1313/index.xml" class="nav-link">📡 RSS</a>
+            <a href="https://dacuteangle.github.io/index.xml" class="nav-link">📡 RSS</a>
         </li>
         
     </ul>
@@ -130,7 +130,7 @@
                     </div>
                 </div>
                 <div class="window-content">
-                    <a href="http://localhost:1313/" class="site-title">DAcuteAngle</a>
+                    <a href="https://dacuteangle.github.io/" class="site-title">DAcuteAngle</a>
                     
                 </div>
             </div>
@@ -141,7 +141,7 @@
             
 <article class="window">
     <div class="window-header">
-        <span class="window-title">模型评价指标(Scoring)</span>
+        <span class="window-title">分类模型评价指标(Scoring)</span>
         <div class="window-controls">
             <span class="window-button">_</span>
             <span class="window-button">□</span>
@@ -150,19 +150,23 @@
     </div>
     <div class="window-content">
         <header class="content-header">
-            <h1 class="post-title">模型评价指标(Scoring)</h1>
+            <h1 class="post-title">分类模型评价指标(Scoring)</h1>
             
             
             <div class="post-meta">
                 <span class="post-meta-item">
-                    📅 Published: Tuesday, July 29, 2025
+                    📅 Published: 292912-70-00
+                </span>
+                
+                <span class="post-meta-item">
+                    🔄 Updated: 313112-70-00
                 </span>
                 
                 <span class="post-meta-item">
                     📖 1 min read
                 </span>
                 <span class="post-meta-item">
-                    📊 83 words
+                    📊 187 words
                 </span>
                 
                 
@@ -187,6 +191,9 @@
                         , 
                         <a href="/tags/machine-learning">machine learning</a>
                     
+                        , 
+                        <a href="/tags/scikit-learn">scikit-learn</a>
+                    
                 </span>
                 
                 
@@ -196,7 +203,7 @@
             
             
             <div class="post-description" style="font-style: italic; margin: 8px 0; padding: 4px 8px; background: var(--bg-secondary); border: 1px inset var(--border-dark);">
-                分类模型（Accuracy, recall, precision, f1, roc-auc）
+                分类模型评价指标（Accuracy, recall, precision, f1, roc-auc）以及scikit-learn中如何计算
             </div>
             
             
@@ -211,7 +218,7 @@
             </div>
             <nav id="TableOfContents">
   <ul>
-    <li><a href="#1-分类">1. 分类</a>
+    <li><a href="#1-metrics">1. metrics</a>
       <ul>
         <li><a href="#1-accuracy准确率">1. Accuracy(准确率)</a></li>
         <li><a href="#2-precision精确率查准率">2. Precision(精确率/查准率)</a></li>
@@ -224,6 +231,8 @@
         </li>
       </ul>
     </li>
+    <li><a href="#2-在scikit-learn中计算metrics">2. 在scikit-learn中计算metrics</a></li>
+    <li><a href="#3-绘制roc">3. 绘制ROC</a></li>
   </ul>
 </nav>
         </div>
@@ -231,7 +240,7 @@
         
         
         <div class="content">
-            <h2 id="1-分类">1. 分类</h2>
+            <h2 id="1-metrics">1. metrics</h2>
 <h3 id="1-accuracy准确率">1. Accuracy(准确率)</h3>
 <p>所有样本结果中的预测准确程度
 </p>
@@ -279,7 +288,77 @@ AUC(Area Under Curve)，指ROC曲线和坐标轴围成的面积</p>
 <p>由于阈值越高被判定为正类的标准越严苛。最高时，所有样本均预测为负，分子TP=FP=0，因此TPR=FPR=0。最低时，所有样本均预测为正，分母中FN=TN=0，因此TPR=FPR=1。
 绘制过程中随着阈值降低，正类增加，负例减少，因此TP,FP增大或持平而TN,FN减少或持平，因此TPR和FPR增大或持平，ROC点往右上（或右／或上）移动，或不动；但绝不会往左下(或左／或下)移动。</p>
 <p>AUC=0.5 ROC对角线：FPR=TPR，模型将正类判为正类的概率（TPR）等于将负类误判为正类的概率（FPR），等同于随机猜测。</p>
-
+<h2 id="2-在scikit-learn中计算metrics">2. 在scikit-learn中计算metrics</h2>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>y_pred <span style="color:#0550ae">=</span> model<span style="color:#0550ae">.</span>predict<span style="color:#1f2328">(</span>X_test<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#57606a">#返回accuracy</span>
+</span></span><span style="display:flex;"><span><span style="color:#6639ba">print</span><span style="color:#1f2328">(</span>accuracy_score<span style="color:#1f2328">(</span>y_test<span style="color:#1f2328">,</span>y_pred<span style="color:#1f2328">))</span>
+</span></span><span style="display:flex;"><span><span style="color:#57606a">#返回混淆矩阵</span>
+</span></span><span style="display:flex;"><span><span style="color:#6639ba">print</span><span style="color:#1f2328">(</span>confusion_matrix<span style="color:#1f2328">(</span>y_test<span style="color:#1f2328">,</span> y_pred<span style="color:#1f2328">))</span>
+</span></span><span style="display:flex;"><span><span style="color:#57606a">#返回fbeta，beta=1时为f1，否则：</span>
+</span></span><span style="display:flex;"><span><span style="color:#57606a">#beta&gt;1：更重视召回率（减少FN） </span>
+</span></span><span style="display:flex;"><span><span style="color:#57606a">#beta&lt;1：更重视精确率（减少FP）</span>
+</span></span><span style="display:flex;"><span><span style="color:#6639ba">print</span><span style="color:#1f2328">(</span>fbeta_score<span style="color:#1f2328">(</span>y_true<span style="color:#1f2328">,</span> y_pred<span style="color:#1f2328">,</span> beta<span style="color:#0550ae">=</span><span style="color:#0550ae">2</span><span style="color:#1f2328">))</span> 
+</span></span><span style="display:flex;"><span><span style="color:#57606a">#返回分类报告</span>
+</span></span><span style="display:flex;"><span><span style="color:#57606a">#横轴：precision, recall, f1-score, support</span>
+</span></span><span style="display:flex;"><span><span style="color:#57606a">#纵轴：class0, class1, ..., class k, macro avg, weighted avg</span>
+</span></span><span style="display:flex;"><span><span style="color:#57606a">#其中support是各class样本数量</span>
+</span></span><span style="display:flex;"><span><span style="color:#57606a">#其中macro avg：简单算数平均；weighted avg：以support为权重计算平均</span>
+</span></span><span style="display:flex;"><span><span style="color:#6639ba">print</span><span style="color:#1f2328">(</span>classification_report<span style="color:#1f2328">(</span>y_test<span style="color:#1f2328">,</span> y_pred<span style="color:#1f2328">))</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="3-绘制roc">3. 绘制ROC</h2>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#57606a">#Predicting proba返回(n_samples, n_classes)的数组</span>
+</span></span><span style="display:flex;"><span><span style="color:#57606a">#这个例子里取了列1，也就是属于class 1的概率</span>
+</span></span><span style="display:flex;"><span>y_pred_prob <span style="color:#0550ae">=</span> model<span style="color:#0550ae">.</span>predict_proba<span style="color:#1f2328">(</span>X_test<span style="color:#1f2328">)[:,</span><span style="color:#0550ae">1</span><span style="color:#1f2328">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#57606a"># Generate ROC curve values: fpr, tpr, thresholds</span>
+</span></span><span style="display:flex;"><span>fpr<span style="color:#1f2328">,</span> tpr<span style="color:#1f2328">,</span> thresholds <span style="color:#0550ae">=</span> roc_curve<span style="color:#1f2328">(</span>y_test<span style="color:#1f2328">,</span> y_pred_prob<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#0550ae">.</span>plot<span style="color:#1f2328">([</span><span style="color:#0550ae">0</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">1</span><span style="color:#1f2328">],</span> <span style="color:#1f2328">[</span><span style="color:#0550ae">0</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">1</span><span style="color:#1f2328">],</span> <span style="color:#0a3069">&#39;k--&#39;</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#0550ae">.</span>plot<span style="color:#1f2328">(</span>fpr<span style="color:#1f2328">,</span> tpr<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#0550ae">.</span>xlabel<span style="color:#1f2328">(</span><span style="color:#0a3069">&#39;False Positive Rate&#39;</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#0550ae">.</span>ylabel<span style="color:#1f2328">(</span><span style="color:#0a3069">&#39;True Positive Rate&#39;</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#0550ae">.</span>title<span style="color:#1f2328">(</span><span style="color:#0a3069">&#39;ROC Curve&#39;</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#0550ae">.</span>show<span style="color:#1f2328">()</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
         </div>
         
         
@@ -314,7 +393,7 @@ AUC(Area Under Curve)，指ROC曲线和坐标轴围成的面积</p>
             </div>
         </div>
         <div class="window-content">
-            <a href="http://localhost:1313/posts/get_dummies/" style="text-decoration: none; color: inherit;">
+            <a href="https://dacuteangle.github.io/posts/get_dummies/" style="text-decoration: none; color: inherit;">
                 <div style="font-weight: bold; font-size: 10px; margin-bottom: 2px;">pandas.get_dummies</div>
                 <div style="font-size: 9px; color: var(--text-secondary);">Jul 24, 2025</div>
             </a>
@@ -359,7 +438,7 @@ AUC(Area Under Curve)，指ROC曲线和坐标轴围成的面积</p>
                 
                 <div>
                     <div style="font-weight: bold; margin-bottom: 4px;">🔗 Quick Links</div>
-                    <div><a href="http://localhost:1313/">🏠 Home</a></div>
+                    <div><a href="https://dacuteangle.github.io/">🏠 Home</a></div>
                     
                     
                     <div><a href="/posts/">📝 All Posts</a></div>
@@ -393,8 +472,8 @@ AUC(Area Under Curve)，指ROC曲线和坐标轴围成的面积</p>
                     <div style="font-weight: bold; margin-bottom: 4px;">📊 Statistics</div>
                     <div>Posts: 2</div>
                     <div>Categories: 1</div>
-                    <div>Tags: 4</div>
-                    <div>Last Update: Jul 29, 2025</div>
+                    <div>Tags: 5</div>
+                    <div>Last Update: Jul 31, 2025</div>
                 </div>
             </div>
             
@@ -412,7 +491,7 @@ AUC(Area Under Curve)，指ROC曲线和坐标轴围成的面积</p>
                     <img src="/img/blinkiesCafe-YF.gif" alt="">
                 </div>
                 <div style="font-size: 9px; color: var(--text-secondary);">
-                    Last updated: Tuesday, July 29, 2025 at 2:50 PM
+                    Last updated: Thursday, July 31, 2025 at 12:00 AM
                 </div>
                 
             </div>
@@ -434,12 +513,12 @@ AUC(Area Under Curve)，指ROC曲线和坐标轴围成的面积</p>
     <div class="status-bar">
         <div class="status-left">
             <span class="status-item">Thu 31 Jul 2025</span>
-            <span class="status-item">21:12</span>
+            <span class="status-item">23:28</span>
         </div>
         <div class="status-right">
             <span class="status-item">DAcuteAngle</span>
             
-            <span class="status-item">83 words</span>
+            <span class="status-item">187 words</span>
             
         </div>
     </div>
@@ -449,7 +528,7 @@ AUC(Area Under Curve)，指ROC曲线和坐标轴围成的面积</p>
     
     
     
-    <script src="http://localhost:1313/js/main.min.d464278de2b5e4ea73f646eec7f40762d21c34396721312894f0a23c3064277e.js"></script>
+    <script src="https://dacuteangle.github.io/js/main.min.d464278de2b5e4ea73f646eec7f40762d21c34396721312894f0a23c3064277e.js"></script>
     
     
     
