@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pandas on DAcuteAngle</title>
-    <link>https://dacuteangle.github.io/tags/pandas/</link>
+    <link>http://localhost:1313/tags/pandas/</link>
     <description>Recent content in Pandas on DAcuteAngle</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 24 Jul 2025 23:11:55 +0800</lastBuildDate>
-    <atom:link href="https://dacuteangle.github.io/tags/pandas/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/pandas/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>pandas.get_dummies</title>
-      <link>https://dacuteangle.github.io/posts/get_dummies/</link>
+      <link>http://localhost:1313/posts/get_dummies/</link>
       <pubDate>Thu, 24 Jul 2025 23:11:55 +0800</pubDate>
-      <guid>https://dacuteangle.github.io/posts/get_dummies/</guid>
+      <guid>http://localhost:1313/posts/get_dummies/</guid>
       <description>&lt;p&gt;&amp;ldquo;Dummy Variables&amp;rdquo;，虚拟变量，是指将分类变量（Categorical Variables）转换为数值形式的一种方法，以便机器学习模型能够处理它们。&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://pandas.pydata.org/docs/reference/api/pandas.get_dummies.html#pandas.get_dummies&#34;&gt;pandas文档&lt;/a&gt;&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;pandas.get_dummies(data, prefix=None, prefix_sep=&amp;#39;_&amp;#39;, dummy_na=False, columns=None, sparse=False, drop_first=False, dtype=None) -&amp;gt; pd.DataFrame&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;该函数将data中的unique值（也就是categorical variables）重新编码转换成dummy variables，因此：&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;data中的unique值会变成column name（需要注意NaN值默认ignore）&lt;/li&gt;&#xA;&lt;li&gt;index不变&lt;/li&gt;&#xA;&lt;li&gt;每行有一个column是True，其他均为False&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;其中：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;data: array-like对象（list,tuple,Series,Index,np.ndarray等可被pandas,numpy识别为数组的序列型对象）或DataFrame&lt;/li&gt;&#xA;&lt;li&gt;prefix, prefix_sep: 重新命名组成column name时可加前缀&lt;/li&gt;&#xA;&lt;li&gt;dummy_na: bool型变量&lt;strong&gt;默认False&lt;/strong&gt;，data中的NaN是否要单独列为一列，如果否则直接ignore NaN值&lt;/li&gt;&#xA;&lt;li&gt;columns: list-like对象，当input data是DataFrame时指定需处理的列，默认None=全部&lt;/li&gt;&#xA;&lt;li&gt;sparse: 输出的DataFrame是否要用SparseArray，默认否=用NumPy array&lt;/li&gt;&#xA;&lt;li&gt;drop_first: 是否把编码得到的dummy的第一列drop掉（因为每行只有一个True剩下都是False，其实可以去掉一列，没有损失信息）&lt;/li&gt;&#xA;&lt;li&gt;dtype: 默认bool，指定输出的DataFrame的dtype&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
   </channel>

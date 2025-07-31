@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Machine Learning on DAcuteAngle</title>
-    <link>https://dacuteangle.github.io/tags/machine-learning/</link>
+    <link>http://localhost:1313/tags/machine-learning/</link>
     <description>Recent content in Machine Learning on DAcuteAngle</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Tue, 29 Jul 2025 14:50:37 +0800</lastBuildDate>
-    <atom:link href="https://dacuteangle.github.io/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>模型评价指标(Scoring)</title>
-      <link>https://dacuteangle.github.io/posts/scoring/</link>
+      <link>http://localhost:1313/posts/scoring/</link>
       <pubDate>Tue, 29 Jul 2025 14:50:37 +0800</pubDate>
-      <guid>https://dacuteangle.github.io/posts/scoring/</guid>
+      <guid>http://localhost:1313/posts/scoring/</guid>
       <description>&lt;h2 id=&#34;1-分类&#34;&gt;1. 分类&lt;/h2&gt;&#xA;&lt;h3 id=&#34;1-accuracy准确率&#34;&gt;1. Accuracy(准确率)&lt;/h3&gt;&#xA;&lt;p&gt;所有样本结果中的预测准确程度&#xA;&lt;/p&gt;&#xA;$$&#xA;Accuracy = \frac{预测正确的样本}{总样本} = \frac{TP+TN}{TP+FP+TN+FN} &#xA;\\&#xA;(其中T/F = True/False = 真/假, P/N = Positive/Negative = 正例/负例)&#xA;$$&lt;p&gt;缺点：受样本不均衡影响很大，因为平等对待所有样本，少数类的错误会被多数类的正确掩盖，所以这个指标也许不能真正反映模型的分类能力。&lt;/p&gt;&#xA;&lt;h3 id=&#34;2-precision精确率查准率&#34;&gt;2. Precision(精确率/查准率)&lt;/h3&gt;&#xA;&lt;p&gt;正样本结果中的预测准确程度（查到的尽量都对）&#xA;&lt;/p&gt;&#xA;$$&#xA;Precision = \frac{TP}{TP+FP}&#xA;$$&lt;h3 id=&#34;3-recall召回率查全率&#34;&gt;3. Recall(召回率/查全率)&lt;/h3&gt;&#xA;&lt;p&gt;实际为正的样本中被预测为正样本的概率（对的尽量都查到）&#xA;&lt;/p&gt;&#xA;$$&#xA;Recall = \frac{TP}{TP+FN}&#xA;$$&lt;p&gt;Recall也就是True Positive Rate(TPR)，也称灵敏度，类似还有TNR，FPR，FNR。&#xA;另外，有$TNR+FPR=1, TPR+FNR=1$&lt;/p&gt;&#xA;&lt;h3 id=&#34;4-f1-score&#34;&gt;4. f1-score&lt;/h3&gt;&#xA;&lt;p&gt;由于Precision和Recall难两全，可作P-R图，如果模型A的P-R曲线完全被模型B的包住，说明B性能更优。&#xA;另一种思路是计算P和R的加权调和平均F-Measure（F-Score）&#xA;&lt;/p&gt;&#xA;$$&#xA;\frac{1}{F 1}=\frac{1}{2} \cdot\left(\frac{1}{P}+\frac{1}{R}\right) \\&#xA;F1=\frac{2 \times P \times R}{P+R} = \frac{2 \times TP}{样例总数+TP-TN}&#xA;$$&lt;h3 id=&#34;5-roc曲线和auc&#34;&gt;5. ROC曲线和AUC&lt;/h3&gt;&#xA;&lt;p&gt;ROC（Receiver Operating Characteristic）曲线&#xA;AUC(Area Under Curve)，指ROC曲线和坐标轴围成的面积&lt;/p&gt;&#xA;&lt;p&gt;FPR-TPR曲线，TPR（纵轴）越高越好，FPR（横轴）越低越好，因此曲线越陡越好。AUC越大越好。&#xA;优点：不受测试样本正负分布影响。&lt;/p&gt;</description>
     </item>
   </channel>
